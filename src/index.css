@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom subtle dark scrollbar for customizer panel */
+.studio-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.studio-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.studio-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 9999px;
+}
+
+.studio-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* Clean custom range slider styling */
+input[type="range"].studio-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.14);
+  outline: none;
+}
+
+input[type="range"].studio-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #e6005c;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(230, 0, 92, 0.45);
+  transition: transform 0.15s ease;
+}
+
+input[type="range"].studio-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+input[type="range"].studio-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #e6005c;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(230, 0, 92, 0.45);
+}

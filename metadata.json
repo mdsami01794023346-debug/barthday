@@ -1,0 +1,6 @@
+{
+  "name": "Starlight Wishes",
+  "description": "Create 3D glowing kinetic birthday and love message scenes with right-to-left floating text, 3D hearts, and scannable pink heart QR cards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
